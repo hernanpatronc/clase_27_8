@@ -1,0 +1,47 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+#player {
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    position: absolute;
+}
+#life {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+}
+.game-over {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+}
+#time {
+    position: absolute;
+    font-size: 25px;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+}
