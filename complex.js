@@ -70,9 +70,9 @@ requestAnimationFrame(move)
 function checkOutOfBounds() {
     if (player.offsetTop < 0) {
         player.style.top = GAME_HEIGHT - PLAYER_HEIGHT + 'px'
-    } else if (player.offsetLeft + PLAYER_WIDTH >= GAME_WIDTH) {
+    } else if (player.offsetLeft + PLAYER_WIDTH > GAME_WIDTH) {
         player.style.left = '0px'
-    } else if (player.offsetTop + PLAYER_HEIGHT >= GAME_HEIGHT) {
+    } else if (player.offsetTop + PLAYER_HEIGHT > GAME_HEIGHT) {
         player.style.top = '0px'
     } else if (player.offsetLeft < 0) {
         player.style.left = GAME_WIDTH - PLAYER_WIDTH + 'px'
